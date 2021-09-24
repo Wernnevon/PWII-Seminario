@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css";
 export default function DynamicRoute() {
   const router = useRouter()
   const {
-    query: { exDynamicRoute },
+    query: { exDynamicRoutes },
   } = router
   return (
     <div className={styles.container}>
@@ -17,7 +17,7 @@ export default function DynamicRoute() {
     <main className={styles.main}>
       <h1 className={styles.title}>Roteamento em Next.js!</h1>
       <h3 className={styles.title}>Rotas Dinamicas</h3>
-      <p>Bem vindo, vc acessou como: {exDynamicRoute}</p>
+      <p>Bem vindo, vc acessou como: {exDynamicRoutes}</p>
     </main>
   </div>
   );
